@@ -13,18 +13,24 @@ var game = new Phaser.Game(config);
 
 function preload ()
 {
-  this.load.image('sky', 'assets/background.png');
-  // this.load.spritesheet('dude',
-  //   'assets/dude.png',
-  //  { frameWidth: 32, frameHeight: 48 })
+  this.load.image('background', 'assets/background.png');
+  this.load.image('carte2', 'assets/carte2.png');
+  // this.load.image('background', 'assets/background.png');
+  // this.load.image('background', 'assets/background.png');
+  // this.load.image('background', 'assets/background.png');
+  // this.load.image('background', 'assets/background.png');
+  // this.load.image('background', 'assets/background.png');
 }
-var cartes
 function create ()
 {
+
   this.add.image(400, 300, 'background');
-//   cartes.create(600, 400, 'ground');
-// cartes.create(50, 250, 'ground');
-// cartes.create(750, 220, 'ground');
+  this.add.image(0, 0, 'carte2').setOrigin(100, 0)
+
+  // this.add.image(400, 300, 'background');
+  // this.add.image(400, 300, 'background');
+  // this.add.image(400, 300, 'background');
+  // this.add.image(400, 300, 'background');
 }
 
 function update ()
